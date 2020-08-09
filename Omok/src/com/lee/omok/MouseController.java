@@ -21,7 +21,7 @@ public class MouseController extends MouseAdapter {
 	
 	@Override
 	public void mousePressed(MouseEvent event) { // 마우스 클릭 메소드 오버라이드
-		int x = (int)Math.round(event.getX()/(double) ms.getCELL()) - 1;
+		int x = (int)Math.round(event.getX()/(double) ms.getCELL()) - 1; 
 		int y = (int)Math.round(event.getY()/(double) ms.getCELL()) - 1;
 		
 		if(gr.checkInput(x, y) == false) { // 만약 돌을 놓을 수 없는 자리면 메소드 종료

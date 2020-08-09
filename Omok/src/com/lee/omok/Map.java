@@ -20,20 +20,20 @@ public class Map extends JPanel{
 	}
 	
 	@Override
-	public void paintComponent(Graphics g) {
+	public void paintComponent(Graphics g) { // 바둑판과 바둑돌 그리기
 		super.paintComponent(g);
-		g.setColor(Color.BLACK);
-		board(g);
-		drawStone(g);
+		g.setColor(Color.BLACK); 
+		board(g); // 바둑판 메소드 호출
+		drawStone(g); // 바둑돌 메소드 호출
 	}
-	public void board(Graphics g) {
+	public void board(Graphics g) { // 바둑판 선 긋기
 		for(int i = 1; i <= size.getSIZE(); i++) {
 			g.drawLine(size.getCELL(), i*size.getCELL(), size.getCELL()*size.getSIZE(), i*size.getCELL());
 			g.drawLine(i*size.getCELL(), size.getCELL(), i*size.getCELL(), size.getCELL()*size.getSIZE());
 		}
 	}
 	
-	public void drawStone(Graphics g) {
+	public void drawStone(Graphics g) { // 바둑돌 색깔 설정
 		for(int x = 0; x < size.getSIZE(); x++) {
 			for(int y = 0; y < size.getSIZE(); y++) {
 				if(gr.getMap()[x][y] == 1) {
@@ -45,11 +45,11 @@ public class Map extends JPanel{
 		}
 	}
 	
-	public void drawBlack(Graphics g, int x, int y) {
+	public void drawBlack(Graphics g, int x, int y) { // 검은돌 색깔, 크기 설정
 		g.setColor(Color.BLACK);
 		g.fillOval(x*size.getCELL()+15, y*size.getCELL()-15, STONE_SIZE, STONE_SIZE);
-	}
-	public void drawWhite(Graphics g, int x, int y) {
+	} 
+	public void drawWhite(Graphics g, int x, int y) { //흰색돌 색깔, 크기 설정
 		g.setColor(Color.WHITE);
 		g.fillOval(x*size.getCELL()+15, y*size.getCELL()-15, STONE_SIZE, STONE_SIZE);
 	}
