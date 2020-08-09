@@ -1,4 +1,4 @@
-package com.omok;
+package com.lee.omok;
 
 public class GameRule {
 	private final int PLAYER_CNT = 2; // 플레이어 수 

@@ -1,4 +1,4 @@
-package com.omok;
+package com.lee.omok;
 
 import java.awt.Container;
 import java.awt.event.ActionEvent;

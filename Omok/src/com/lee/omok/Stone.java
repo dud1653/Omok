@@ -1,4 +1,4 @@
-package com.omok;
+package com.lee.omok;
 
 public class Stone {
 	private int x; // 바둑판의 x축

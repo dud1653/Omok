@@ -1,4 +1,4 @@
-package com.omok;
+package com.lee.omok;
 
 import java.awt.Color;
 

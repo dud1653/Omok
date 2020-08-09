@@ -1,4 +1,4 @@
-package com.omok;
+package com.lee.omok;
 
 public class MapSize {
 	private final int CELL = 30; 
